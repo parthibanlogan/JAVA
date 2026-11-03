@@ -14,7 +14,7 @@ export const LAB = {
   raw: 'https://raw.githubusercontent.com/parthibanlogan/JAVA/main/',
   // Address of the Streamlit student app (docs/11-streamlit-apps.md), e.g. 'https://vit-java-lab.streamlit.app'.
   // When set, lab.html points students to it: programs there run on the real JDK 21 (files, serialization, JDBC).
-  studentApp: '',
+  studentApp: 'https://civillabeval.streamlit.app/',
 };
 
 /** URL of a new GitHub issue from an issue form, with fields pre-filled (field ids as query keys). */
