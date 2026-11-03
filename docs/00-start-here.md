@@ -1,4 +1,4 @@
-# 0. Start here: step-by-step for a GitHub beginner (teacher / maintainer)
+# 0. Start here: step-by-step for a GitHub beginner (mentor)
 
 This guide takes you from "the code is on GitHub" to "the lab website is live, students can claim
 problems and submit apps". Everything is done in a web browser; you do not need to install anything.
@@ -9,7 +9,7 @@ Words you will meet:
 | Word | Meaning |
 |------|---------|
 | **Repository (repo)** | A project folder on GitHub with the full history of every change. Yours is `parthibanlogan/JAVA`. |
-| **Branch** | A separate line of work. `main` is the official one; the lab's work currently sits on the branch `claude/fervent-darwin-sfgske`. |
+| **Branch** | A separate line of work. `main` is the official one; the lab's work currently sits on the branch `main`. |
 | **Commit** | One saved change, with a message. |
 | **Pull request (PR)** | A request to copy the commits of one branch into another, shown as a page where you can review and press *Merge*. |
 | **GitHub Actions** | Robots that run after every change: they test the code and publish the website. The *Actions* tab shows them (green tick = success, red cross = failure). |
@@ -37,7 +37,7 @@ The repository page is `https://github.com/parthibanlogan/JAVA`. Sign in at gith
 ## Step 3. Merge the lab into `main` with a pull request
 
 1. Click the **Pull requests** tab, then the green **New pull request** button.
-2. Set **base:** to `main` and **compare:** to `claude/fervent-darwin-sfgske`.
+2. Set **base:** to `main` and **compare:** to `sub`.
    GitHub shows the list of changed files (more than 300 new files).
 3. Click **Create pull request**. Title: `Civil Engineering Innovation Lab`. Click **Create pull request** again.
 4. Wait 2-3 minutes. At the bottom of the pull request, the checks **CI / Java tests ...**, **CI / Experiment 16 ...**
