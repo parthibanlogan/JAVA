@@ -1,9 +1,24 @@
 {
   "format": 1,
-  "updated_at": null,
+  "updated_at": "2026-11-03T08:49:41Z",
   "settings": {
     "regnoPattern": "^[0-9]{2}[A-Z]{3}[0-9]{4}$",
     "timeZone": "Asia/Kolkata"
   },
-  "sessions": []
+  "sessions": [
+    {
+      "id": "L01",
+      "title": "L01",
+      "questions": [
+        "L01"
+      ],
+      "windows": [
+        {
+          "opened_at": "2026-11-03T08:49:41Z",
+          "closes_at": "2026-11-03T08:59:41Z",
+          "closed_at": null
+        }
+      ]
+    }
+  ]
 }
