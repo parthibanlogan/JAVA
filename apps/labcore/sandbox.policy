@@ -1,0 +1,18 @@
+// Permissions of student programs run by the Java Lab student app (apps/labcore/sandbox.py).
+// Java 21 Security Manager; ${lab.work} is the program's own fresh working folder.
+// Not granted: files outside that folder, network, processes, reflection on private members,
+// class loaders, environment variables (except the three of Experiment 16), native code.
+// Libraries supplied by the app (H2 and the jdbc:mysql shim of Experiment 16).
+grant codeBase "file:${lab.lib}/-" {
+    permission java.security.AllPermission;
+};
+
+grant {
+    permission java.io.FilePermission "${lab.work}", "read";
+    permission java.io.FilePermission "${lab.work}${/}-", "read,write,delete";
+    permission java.util.PropertyPermission "*", "read";
+    permission java.lang.RuntimePermission "exitVM.*";
+    permission java.lang.RuntimePermission "getenv.DB_URL";
+    permission java.lang.RuntimePermission "getenv.DB_USER";
+    permission java.lang.RuntimePermission "getenv.DB_PASSWORD";
+};

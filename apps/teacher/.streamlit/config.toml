@@ -1,0 +1,11 @@
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+primaryColor = "#0b6e8a"

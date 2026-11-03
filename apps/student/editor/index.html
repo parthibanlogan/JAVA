@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Java Lab editor</title>
+<link rel="stylesheet" href="editor.css">
+<script src="ace/ace.js"></script>
+</head>
+<body>
+<div id="app" hidden>
+  <div class="bar"><span id="file" class="file">Main.java</span><span id="stats" class="stats"></span></div>
+  <div id="editor" class="editor"></div>
+  <label for="stdin" class="label">Keyboard input for Run (type what the program reads, one value per line)</label>
+  <textarea id="stdin" rows="4" spellcheck="false"></textarea>
+  <div class="buttons">
+    <button id="run" type="button">Run</button>
+    <button id="check" type="button">Check with sample cases</button>
+    <button id="submit" type="button" class="primary">Submit</button>
+    <span id="status" class="status" role="status"></span>
+  </div>
+</div>
+<script type="module" src="editor.js"></script>
+</body>
+</html>
